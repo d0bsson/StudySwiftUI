@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ColorCircle.swift
 //  StudySwiftUI
 //
 //  Created by Дэвид Бердников on 01.06.2021.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ColorCircle: View {
     var body: some View {
-        Text("Hello!!!")
-            .font(.title)
+        Color(.black)
+            .ignoresSafeArea()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ColorCircle_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ColorCircle()
     }
 }
