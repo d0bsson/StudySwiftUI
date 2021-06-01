@@ -7,24 +7,28 @@
 
 import SwiftUI
 
+
+
 struct Lights: View {
+    let color: Color
+    
     var body: some View {
-        VStack(alignment: .center) {
+        VStack(alignment: .center, spacing: 16) {
             Circle()
                 .foregroundColor(.red)
-                .frame(width: 200, height: 200)
+                .frame(width: 180, height: 180)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
-            Circle()
-                .foregroundColor(.yellow)
-                .frame(width: 200, height: 200)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-            Circle()
-                .foregroundColor(.green)
-                .frame(width: 200, height: 200)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+//            Circle()
+//                .foregroundColor(.yellow)
+//                .frame(width: 180, height: 180)
+//                .clipShape(Circle())
+//                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+//            Circle()
+//                .foregroundColor(.green)
+//                .frame(width: 180, height: 180)
+//                .clipShape(Circle())
+//                .overlay(Circle().stroke(Color.white, lineWidth: 4))
         }
     }
 }
@@ -32,6 +36,7 @@ struct Lights: View {
 
 struct ColorCircle_Previews: PreviewProvider {
     static var previews: some View {
-        Lights()
+        Lights(color: .red)
     }
 }
+
