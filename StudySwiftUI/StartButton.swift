@@ -9,7 +9,9 @@ import SwiftUI
 
 struct StartButton: View {
     
-    
+    enum lights {
+        case red, yellow, green
+    }
     
     var body: some View {
         Button(action: {}, label: {
@@ -29,4 +31,8 @@ struct Button_Previews: PreviewProvider {
     static var previews: some View {
         StartButton()
     }
+}
+
+private func currentLight() {
+    
 }
