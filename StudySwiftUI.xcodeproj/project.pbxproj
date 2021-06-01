@@ -11,7 +11,7 @@
 		D7ABDB672666BC5600937856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ABDB662666BC5600937856 /* ContentView.swift */; };
 		D7ABDB692666BC5700937856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7ABDB682666BC5700937856 /* Assets.xcassets */; };
 		D7ABDB6C2666BC5700937856 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7ABDB6B2666BC5700937856 /* Preview Assets.xcassets */; };
-		D7ABDB752666C6D500937856 /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ABDB742666C6D500937856 /* ColorCircle.swift */; };
+		D7ABDB752666C6D500937856 /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ABDB742666C6D500937856 /* Lights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		D7ABDB682666BC5700937856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7ABDB6B2666BC5700937856 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D7ABDB6D2666BC5700937856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7ABDB742666C6D500937856 /* ColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
+		D7ABDB742666C6D500937856 /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				D7ABDB642666BC5600937856 /* StudySwiftUIApp.swift */,
 				D7ABDB662666BC5600937856 /* ContentView.swift */,
-				D7ABDB742666C6D500937856 /* ColorCircle.swift */,
+				D7ABDB742666C6D500937856 /* Lights.swift */,
 				D7ABDB682666BC5700937856 /* Assets.xcassets */,
 				D7ABDB6D2666BC5700937856 /* Info.plist */,
 				D7ABDB6A2666BC5700937856 /* Preview Content */,
@@ -143,7 +143,7 @@
 			files = (
 				D7ABDB672666BC5600937856 /* ContentView.swift in Sources */,
 				D7ABDB652666BC5600937856 /* StudySwiftUIApp.swift in Sources */,
-				D7ABDB752666C6D500937856 /* ColorCircle.swift in Sources */,
+				D7ABDB752666C6D500937856 /* Lights.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
