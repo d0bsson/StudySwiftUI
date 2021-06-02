@@ -8,16 +8,11 @@
 import SwiftUI
 
 struct StartButton: View {
-    
-    @State var labelName = "START"
-    
-    
+    let labelName: String
+    let action: () -> ()
+        
     var body: some View {
-        Button(action: {
-            
-            labelName = "NEXT"
-            
-        }, label: {
+        Button(action: action){
             Text(labelName)
                 .font(.title)
                 .frame(width: 200.0, height: 20.0)
@@ -25,19 +20,16 @@ struct StartButton: View {
                 .foregroundColor(.black)
                 .background(Color.blue)
                 .cornerRadius(10.0)
-        })
-    }
-    
-    private func currentLight() {
-        
-        
+        }
     }
     
     
     struct Button_Previews: PreviewProvider {
         static var previews: some View {
-            StartButton()
+            StartButton(labelName: "START", action: {} )
         }
     }
+    
+    
 }
 
