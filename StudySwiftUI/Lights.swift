@@ -15,20 +15,10 @@ struct Lights: View {
     var body: some View {
         VStack(alignment: .center, spacing: 16) {
             Circle()
-                .foregroundColor(.red)
+                .foregroundColor(color)
                 .frame(width: 180, height: 180)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
-//            Circle()
-//                .foregroundColor(.yellow)
-//                .frame(width: 180, height: 180)
-//                .clipShape(Circle())
-//                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-//            Circle()
-//                .foregroundColor(.green)
-//                .frame(width: 180, height: 180)
-//                .clipShape(Circle())
-//                .overlay(Circle().stroke(Color.white, lineWidth: 4))
         }
     }
 }
@@ -36,7 +26,9 @@ struct Lights: View {
 
 struct ColorCircle_Previews: PreviewProvider {
     static var previews: some View {
-        Lights(color: .red)
+        Lights(color: .black)
     }
+    
+    
 }
 

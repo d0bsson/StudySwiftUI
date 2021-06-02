@@ -9,13 +9,16 @@ import SwiftUI
 
 struct StartButton: View {
     
-    enum lights {
-        case red, yellow, green
-    }
+    @State var labelName = "START"
+    
     
     var body: some View {
-        Button(action: {}, label: {
-            Text("Start")
+        Button(action: {
+            
+            labelName = "NEXT"
+            
+        }, label: {
+            Text(labelName)
                 .font(.title)
                 .frame(width: 200.0, height: 20.0)
                 .padding()
@@ -24,15 +27,17 @@ struct StartButton: View {
                 .cornerRadius(10.0)
         })
     }
-}
-
-
-struct Button_Previews: PreviewProvider {
-    static var previews: some View {
-        StartButton()
+    
+    private func currentLight() {
+        
+        
+    }
+    
+    
+    struct Button_Previews: PreviewProvider {
+        static var previews: some View {
+            StartButton()
+        }
     }
 }
 
-private func currentLight() {
-    
-}
